@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EditorView" customModule="LikeIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrawBg" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-qd-qhj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-cF-hSJ">
+                    <rect key="frame" x="175" y="23" width="120" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="iH3-aV-uHN"/>
+                        <constraint firstAttribute="height" constant="32" id="s5E-1q-pRd"/>
+                    </constraints>
+                    <state key="normal" title="删  除">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hCn-1G-UEr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-yz-A6T">
+                    <rect key="frame" x="25" y="23" width="120" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="HyE-gh-evP"/>
+                        <constraint firstAttribute="width" constant="120" id="ZEQ-0x-s37"/>
+                    </constraints>
+                    <state key="normal" title="修  改">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="updateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cdx-CL-wQB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cG3-qd-qhj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DnJ-ac-sDi"/>
+                <constraint firstItem="cG3-qd-qhj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hhz-nG-XBB"/>
+                <constraint firstItem="Q7f-cF-hSJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="MOO-Hy-8QM"/>
+                <constraint firstItem="awl-yz-A6T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="SNS-iI-PVM"/>
+                <constraint firstAttribute="bottom" secondItem="cG3-qd-qhj" secondAttribute="bottom" id="XdB-jA-cUW"/>
+                <constraint firstAttribute="trailing" secondItem="Q7f-cF-hSJ" secondAttribute="trailing" constant="25" id="Yow-V8-A2f"/>
+                <constraint firstItem="awl-yz-A6T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="njg-aw-fI1"/>
+                <constraint firstAttribute="trailing" secondItem="cG3-qd-qhj" secondAttribute="trailing" id="ocx-zI-U02"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="177" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrawBg" width="179" height="38"/>
+    </resources>
+</document>

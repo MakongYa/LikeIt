@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TypeCell" customModule="LikeIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="房租" translatesAutoresizingMaskIntoConstraints="NO" id="Fzd-gq-nkF">
+                        <rect key="frame" x="12" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Fzd-gq-nkF" secondAttribute="height" multiplier="1:1" id="QDg-PH-eu8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axf-vT-Gp9">
+                        <rect key="frame" x="0.0" y="42" width="58" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="kUW-Yd-1sM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="axf-vT-Gp9" firstAttribute="top" secondItem="Fzd-gq-nkF" secondAttribute="bottom" constant="2" id="3iI-fi-JQO"/>
+                <constraint firstItem="axf-vT-Gp9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7b6-ea-p0q"/>
+                <constraint firstItem="Fzd-gq-nkF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="CZM-he-LGW"/>
+                <constraint firstItem="Fzd-gq-nkF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="EQf-i5-2dg"/>
+                <constraint firstItem="Fzd-gq-nkF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Mad-Q0-JzG"/>
+                <constraint firstItem="Fzd-gq-nkF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Nof-aF-HY5"/>
+                <constraint firstAttribute="trailing" secondItem="Fzd-gq-nkF" secondAttribute="trailing" constant="11" id="SeO-N5-wpq"/>
+                <constraint firstAttribute="bottom" secondItem="axf-vT-Gp9" secondAttribute="bottom" id="UAA-Xk-K88"/>
+                <constraint firstAttribute="trailing" secondItem="axf-vT-Gp9" secondAttribute="trailing" id="lEY-Qh-ac7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CZM-he-LGW"/>
+                    <exclude reference="Mad-Q0-JzG"/>
+                    <exclude reference="SeO-N5-wpq"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="typeImageView" destination="Fzd-gq-nkF" id="fMe-ML-C18"/>
+                <outlet property="typeTitleLabel" destination="axf-vT-Gp9" id="6aa-o2-qpN"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="房租" width="48" height="48"/>
+    </resources>
+</document>
